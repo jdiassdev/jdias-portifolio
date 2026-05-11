@@ -68,7 +68,7 @@
 <span class="text-brand-green">●</span> <span class="text-white/70">Upload</span> <span class="text-white/20">.........</span> <span class="text-white">23 files</span>
 <span class="text-cyan-400">●</span> <span class="text-white/70">CDN edge</span> <span class="text-white/20">.......</span> <span class="text-white">global</span>
 
-<span class="text-white/40">Site:</span> <span class="text-brand-yellow">jdias.netlify.app</span>
+<span class="text-white/40">Site:</span> <span class="text-brand-yellow">jdiassdev.netlify.app</span>
 <span class="text-white/40">ID:</span>   <span class="text-white/60">e7a1c3f</span>
 
 <span class="text-brand-green">✓</span> <span class="text-white">Deploy live in</span> <span class="text-orange-300">11.2s</span>

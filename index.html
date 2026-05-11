@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <title>João Dias | Portfólio</title>
-    <meta name="description" content="Portfólio de João Victor T. Dias — Desenvolvedor Fullstack focado em sistemas estáveis, SQL puro e arquitetura monolítica." />
+    <meta name="description" content="Portfólio de João Victor T. Dias — Desenvolvedor Fullstack focado em sistemas estáveis, entrega com qualidade e código limpo." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="João Dias | Portfólio" />
     <meta property="og:description" content="Desenvolvedor Fullstack focado em transformar requisitos em sistemas estáveis. PHP, TypeScript, Java, PostgreSQL." />
@@ -24,6 +24,13 @@
     <meta name="twitter:description" content="Desenvolvedor Fullstack focado em transformar requisitos em sistemas estáveis. PHP, TypeScript, Java, PostgreSQL." />
   </head>
   <body>
+    <!-- Netlify Forms: declaração estática necessária para detecção em SPAs -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -22,7 +22,9 @@
                     <BaseButton variant="third" @click="resetForm">Nova mensagem</BaseButton>
                 </div>
 
-                <form v-else @submit="handleSubmit" class="flex flex-col gap-6">
+                <form v-else name="contact" @submit="handleSubmit" class="flex flex-col gap-6">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden><input name="bot-field" /></p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <BaseInput
                             v-model="values.name"
@@ -58,6 +60,10 @@
                             {{ getFieldError('message') }}
                         </p>
                     </div>
+
+                    <p v-if="submitError" class="text-accent-red text-xs font-bold uppercase italic">
+                        Erro ao enviar. Tente novamente ou escreva para jdiassdev@gmail.com.
+                    </p>
 
                     <BaseButton type="submit" variant="secondary" size="lg" :loading="isSubmitting" class="self-start">
                         Enviar mensagem
@@ -112,6 +118,7 @@ import BaseInput from '@/components/ui/BaseInput.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 
 const submitted = ref(false)
+const submitError = ref(false)
 
 const { values, isSubmitting, handleSubmit, getFieldError, setFieldTouched, reset } = useForm({
     initialValues: { name: '', email: '', message: '' },
@@ -124,9 +131,19 @@ const { values, isSubmitting, handleSubmit, getFieldError, setFieldTouched, rese
         else if (v.message.trim().length < 10) errors.message = 'Mínimo de 10 caracteres'
         return errors
     },
-    async onSubmit(values) {
-        const mailto = `mailto:jdiassdev@gmail.com?subject=Contato via Portfólio — ${encodeURIComponent(values.name)}&body=${encodeURIComponent(`Nome: ${values.name}\nEmail: ${values.email}\n\n${values.message}`)}`
-        window.location.href = mailto
+    async onSubmit(v) {
+        submitError.value = false
+        const res = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                'form-name': 'contact',
+                name: v.name,
+                email: v.email,
+                message: v.message,
+            }).toString(),
+        })
+        if (!res.ok) { submitError.value = true; return }
         submitted.value = true
     }
 })
