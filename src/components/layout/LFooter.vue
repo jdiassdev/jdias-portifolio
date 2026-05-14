@@ -78,14 +78,16 @@
             </div>
 
             <!-- Barra Inferior de Copyright -->
-            <div
-                class="border-t-4 border-black py-4 px-6 flex flex-col md:flex-row justify-between items-center bg-white">
-                <p class="text-[11px] font-black uppercase tracking-[0.2em]">
-                    João Victor T. Dias // 2026
+            <div class="border-t-4 border-black py-3 px-6 flex flex-col md:flex-row justify-between items-center gap-3 bg-white">
+                <span class="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.2em]">
+                    <InstagramIcon size="14" /> <a href="https://www.instagram.com/jdiassv/">@diassjv | 2026</a>
+                </span>
+                <p class="text-[10px] font-bold uppercase opacity-50 italic hidden md:block text-center">
+                    "Pense levemente em si. Pense profundamente no problema." — Musashi
                 </p>
-                <p class="text-[10px] font-bold uppercase mt-2 md:mt-0 opacity-60 italic">
-                    "Pense levemente em si. Pense profundamente no problema." — Musashi, Go Rin No Sho
-                </p>
+                <span class="flex items-center gap-1.5 text-[10px] font-bold uppercase opacity-60">
+                    Desenvolvido com <VueDotjsIcon size="14" />
+                </span>
             </div>
         </div>
     </footer>
@@ -94,5 +96,5 @@
 <script setup>
 import { FileTextIcon, MailIcon } from '@lucide/vue'
 import { navItems } from '@/config/nav.js'
-import { GitHubIcon } from 'vue3-simple-icons';
+import { GitHubIcon, InstagramIcon, VueDotjsIcon } from 'vue3-simple-icons';
 </script>
