@@ -25,7 +25,7 @@
                     </ul>
 
                     <div class="flex items-center gap-3 ml-4 border-l-2 border-black pl-6">
-                        <BaseButton variant="third" size="sm" class="flex items-center gap-2">
+                        <BaseButton to="/jdiass-cv.pdf" download="Joao-Victor-Dias-CV.pdf" variant="third" size="sm" class="flex items-center gap-2">
                             <DownloadIcon :size="16" />
                             <span>CV</span>
                         </BaseButton>
@@ -62,7 +62,7 @@
                 </li>
             </ul>
             <div class="flex gap-4 p-6 border-t-2 border-black">
-                <BaseButton variant="third" size="sm" class="flex items-center gap-2 flex-1 justify-center">
+                <BaseButton to="/jdiass-cv.pdf" download="Joao-Victor-Dias-CV.pdf" variant="third" size="sm" class="flex items-center gap-2 flex-1 justify-center">
                     <DownloadIcon :size="16" />
                     <span>CV</span>
                 </BaseButton>

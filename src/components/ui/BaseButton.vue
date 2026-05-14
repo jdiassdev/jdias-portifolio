@@ -31,6 +31,7 @@ import { computed } from 'vue'
 
 const props = defineProps({
     to: { type: [String, Object], default: null },
+    download: { type: [String, Boolean], default: null },
     variant: { type: String, default: 'primary' },
     size: { type: String, default: 'md' },
     type: { type: String, default: 'button' },
@@ -39,32 +40,29 @@ const props = defineProps({
     block: { type: Boolean, default: false }
 })
 
-const externalProps = computed(() => {
-    if (!isExternalLink.value) return {}
-    return {
-        target: '_blank',
-        rel: 'noopener noreferrer'
-    }
-})
-
-// Lógica para detectar se o link é externo
 const isExternalLink = computed(() => {
     return typeof props.to === 'string' && props.to.startsWith('http')
 })
 
-// Define se deve ser um botão puro
+const isDownloadLink = computed(() => !!props.download && !!props.to)
+
 const isButton = computed(() => !props.to)
 
-// Define qual componente usar: 'a' para externo, 'router-link' para interno, 'button' para ações
 const componentType = computed(() => {
     if (isButton.value) return 'button'
-    return isExternalLink.value ? 'a' : 'router-link'
+    if (isExternalLink.value || isDownloadLink.value) return 'a'
+    return 'router-link'
 })
 
-// Se for externo, o atributo deve ser 'href'. Se interno, deve ser 'to'.
 const linkProp = computed(() => {
     if (isButton.value) return null
-    return isExternalLink.value ? 'href' : 'to'
+    return (isExternalLink.value || isDownloadLink.value) ? 'href' : 'to'
+})
+
+const externalProps = computed(() => {
+    if (isDownloadLink.value) return { download: props.download === true ? '' : props.download }
+    if (!isExternalLink.value) return {}
+    return { target: '_blank', rel: 'noopener noreferrer' }
 })
 
 const variantClasses = {

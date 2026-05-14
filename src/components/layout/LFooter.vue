@@ -29,7 +29,7 @@
                             <GitHubIcon :size="18" />
                             <span>GitHub</span>
                         </a>
-                        <a href="/seu-cv.pdf" download
+                        <a href="/jdiass-cv.pdf" download="Joao-Victor-Dias-CV.pdf"
                             class="flex items-center gap-2 transition-colors hover:text-brand-green">
                             <FileTextIcon :size="18" />
                             <span>CV.pdf</span>
