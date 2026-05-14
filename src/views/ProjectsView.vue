@@ -63,7 +63,7 @@ const projects = [
         categoryClasses: 'bg-black text-white border-none text-[9px]',
         description: 'Plataforma de reservas real-time. Foco em <span class="bg-brand-yellow/30 px-1">performance de carregamento</span> e simplicidade na gestão de datas.',
         tags: ['Next.js 15', 'Prisma', 'PostgreSQL'],
-        link: 'https://github.com/jdiassdev/',
+        link: 'https://casaamarela-six.vercel.app/',
         buttonVariant: 'primary',
         buttonText: 'Explorar Case',
         hoverColor: 'shadow-[12px_12px_0px_0px_#FFFF00]'
@@ -75,7 +75,7 @@ const projects = [
         categoryClasses: 'bg-brand-green text-black border-2 border-black text-[9px]',
         description: 'Biblioteca para sincronizar FormRequests Laravel com interfaces TypeScript automaticamente via CLI.',
         tags: ['PHP 8.2', 'Laravel', 'TS'],
-        link: 'https://github.com/jdiassdev',
+        link: 'https://github.com/jdiassdev/laravel-types-gen',
         buttonVariant: 'third',
         buttonText: 'Ver no GitHub',
         hoverColor: 'shadow-[12px_12px_0px_0px_#00FF00]'
@@ -87,7 +87,7 @@ const projects = [
         categoryClasses: 'bg-brand-yellow text-black border-2 border-black text-[9px]',
         description: 'API RESTful para gestão de barbearias utilizando <span class="underline decoration-black decoration-2">ULIDs</span> e ambiente Dockerizado.',
         tags: ['Laravel', 'Docker', 'MySQL'],
-        link: 'https://github.com/jdiassdev/',
+        link: 'https://github.com/jdiassdev/api-gbarber',
         buttonVariant: 'accent',
         buttonText: 'Explorar Docs',
         hoverColor: 'shadow-[12px_12px_0px_0px_#FFFF00]'
