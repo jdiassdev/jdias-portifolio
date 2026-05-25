@@ -61,7 +61,7 @@
                             <span class="opacity-50 font-medium">Whatsapp</span>
                             <a href="https://wa.me/5591985182601" target="_blank" rel="noopener noreferrer"
                                 class="hover:text-brand-green transition-colors">
-                                +55 91 91985182601
+                                +55 91 985182601
                             </a>
                         </div>
 
