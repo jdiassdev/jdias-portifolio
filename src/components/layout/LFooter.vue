@@ -59,9 +59,9 @@
                     <div class="flex flex-col gap-y-3 text-xs uppercase font-bold">
                         <div class="flex items-center justify-between border-b border-black/10 pb-1">
                             <span class="opacity-50 font-medium">Whatsapp</span>
-                            <a href="https://wa.me/55919XXXXXXX" target="_blank" rel="noopener noreferrer"
+                            <a href="https://wa.me/5591985182601" target="_blank" rel="noopener noreferrer"
                                 class="hover:text-brand-green transition-colors">
-                                +55 91 9XXXX-XXXX
+                                +55 91 91985182601
                             </a>
                         </div>
 
