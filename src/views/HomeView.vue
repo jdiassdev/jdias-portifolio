@@ -16,8 +16,12 @@
 
                 <h1
                     class="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.85] mb-8 italic tracking-tighter">
-                    Projetando <br />
-                    <span class="bg-brand-yellow text-black px-3 inline-block shadow-neo-sm">Soluções</span><br />
+                    Projetando
+                    <br />
+                    <span class="bg-brand-yellow text-black px-0.5 inline-block shadow-neo-sm">
+                        Soluções
+                    </span>
+                    <br />
                     Eficientes.
                 </h1>
 
@@ -57,8 +61,8 @@
                         <div class="w-16"></div>
                     </div>
 
-                    <pre class="px-5 py-4 font-mono text-[10px] leading-[1.9] text-white/90 overflow-hidden"
-><span class="text-brand-green">~/portfolio</span> <span class="text-white/50">$</span> netlify deploy --prod
+                    <pre
+                        class="px-5 py-4 font-mono text-[10px] leading-[1.9] text-white/90 overflow-hidden"><span class="text-brand-green">~/portfolio</span> <span class="text-white/50">$</span> netlify deploy --prod
 
 <span class="text-cyan-400">▲ Netlify</span> <span class="text-white/40">· jdias-portfolio</span>
 
