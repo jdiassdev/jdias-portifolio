@@ -17,7 +17,7 @@
                 <h1
                     class="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.85] mb-8 italic tracking-tighter">
                     Projetando <br />
-                    <span class="bg-brand-yellow text-black px-3 ml-2 inline-block shadow-neo-sm">Soluções</span><br />
+                    <span class="bg-brand-yellow text-black px-3 inline-block shadow-neo-sm">Soluções</span><br />
                     Eficientes.
                 </h1>
 
