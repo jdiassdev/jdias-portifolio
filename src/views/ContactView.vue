@@ -1,7 +1,7 @@
 <template>
     <section class="container mx-auto px-4 py-8 md:py-12 fade-in">
         <div class="flex items-center gap-4 mb-8">
-            <div>
+            <div class="flex-1">
                 <h1 class="text-5xl md:text-6xl font-black uppercase italic tracking-tighter leading-none">
                     / Contato
                 </h1>
@@ -9,6 +9,12 @@
                     Disponível para projetos e oportunidades
                 </p>
             </div>
+            <img
+                src="@/assets/ceruledge.png"
+                alt="Ceruledge"
+                class="w-20 md:w-28 drop-shadow-xl select-none pointer-events-none"
+                draggable="false"
+            />
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">

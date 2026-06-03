@@ -2,6 +2,12 @@
     <section class="max-w-[1400px] mx-auto px-4 py-8 fade-in font-sans text-black">
         <div class="flex items-center justify-between mb-6 pb-2">
             <h2 class="text-3xl font-black uppercase italic tracking-tighter">/ Habilidades</h2>
+            <img
+                src="@/assets/palkia.png"
+                alt="Palkia"
+                class="w-16 md:w-20 drop-shadow-xl select-none pointer-events-none"
+                draggable="false"
+            />
             <div class="flex gap-4 font-mono text-[10px] uppercase font-bold opacity-40">
                 <span>Stack: Fullstack/Backend</span>
                 <span class="text-brand-green">● System_Online</span>

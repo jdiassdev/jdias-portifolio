@@ -47,7 +47,13 @@
             </div>
 
 
-            <div class="hidden lg:block lg:col-span-4">
+            <div class="hidden lg:flex lg:col-span-4 flex-col items-center gap-4">
+                <img
+                    src="@/assets/blastoise.png"
+                    alt="Blastoise"
+                    class="w-28 drop-shadow-xl select-none pointer-events-none"
+                    draggable="false"
+                />
                 <BaseCard variant="terminal"
                     class="rotate-1 hover:rotate-0 transition-transform duration-300 border-2 border-white/10 bg-black shadow-terminal overflow-hidden">
 

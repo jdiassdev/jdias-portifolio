@@ -1,7 +1,7 @@
 <template>
     <section class="container mx-auto px-4 py-8 md:py-12 fade-in">
         <div class="flex items-center gap-4 mb-8 relative overflow-hidden">
-            <div>
+            <div class="flex-1">
                 <h2 class="text-5xl md:text-6xl font-black uppercase italic tracking-tighter leading-none">
                     / Projetos
                 </h2>
@@ -9,6 +9,12 @@
                     Exploração Técnica: Da Prova de Conceito à Produção
                 </p>
             </div>
+            <img
+                src="@/assets/urshifu.png"
+                alt="Urshifu"
+                class="w-20 md:w-28 drop-shadow-xl select-none pointer-events-none"
+                draggable="false"
+            />
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

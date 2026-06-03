@@ -1,7 +1,7 @@
 <template>
     <section class="container mx-auto px-4 py-8 md:py-12 fade-in">
-        <div class="flex items-center gap-4 mb-8">
-            <div>
+        <div class="flex items-center gap-6 mb-8">
+            <div class="flex-1">
                 <h1 class="text-5xl md:text-6xl font-black uppercase italic tracking-tighter leading-none">
                     / Sobre
                 </h1>
@@ -9,6 +9,12 @@
                     Quem está por trás do código
                 </p>
             </div>
+            <img
+                src="@/assets/empoleon.png"
+                alt="Empoleon"
+                class="w-20 md:w-28 drop-shadow-xl select-none pointer-events-none"
+                draggable="false"
+            />
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -90,6 +96,7 @@
                                     <div><span class="text-white/60">"albums"</span> => <span class="text-brand-green">"Circles, A Arte do Insulto"</span>,</div>
                                     <div><span class="text-white/60">"musica"</span> => <span class="text-brand-green">"A7X - Gunslinger"</span>,</div>
                                     <div><span class="text-white/60">"cantor"</span> => <span class="text-brand-green">"Chorão"</span>,</div>
+                                    <div><span class="text-white/60">"pokemon_fav"</span> => <span class="text-brand-green">"Empoleon"</span>,</div>
                                     <div><span class="text-white/60">"modo"</span> => <span class="text-brand-green">"Aproveitando"</span>,</div>
                                     <div><span class="text-white/60">"environment"</span> => <span class="text-brand-green">"Fedora / Ubuntu / Windows"</span>,</div>
                                 </div>
