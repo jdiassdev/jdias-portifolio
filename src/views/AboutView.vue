@@ -13,6 +13,9 @@
                 src="@/assets/empoleon.png"
                 alt="Empoleon"
                 class="w-20 md:w-28 drop-shadow-xl select-none pointer-events-none"
+                width="112" height="112"
+                decoding="async"
+                fetchpriority="high"
                 draggable="false"
             />
         </div>

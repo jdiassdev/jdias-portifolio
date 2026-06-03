@@ -52,6 +52,9 @@
                     src="@/assets/blastoise.png"
                     alt="Blastoise"
                     class="w-28 drop-shadow-xl select-none pointer-events-none"
+                    width="112" height="112"
+                    decoding="async"
+                    fetchpriority="high"
                     draggable="false"
                 />
                 <BaseCard variant="terminal"

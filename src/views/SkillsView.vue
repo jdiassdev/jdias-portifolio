@@ -6,6 +6,9 @@
                 src="@/assets/palkia.png"
                 alt="Palkia"
                 class="w-16 md:w-20 drop-shadow-xl select-none pointer-events-none"
+                width="80" height="80"
+                decoding="async"
+                fetchpriority="high"
                 draggable="false"
             />
             <div class="flex gap-4 font-mono text-[10px] uppercase font-bold opacity-40">
