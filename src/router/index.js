@@ -5,6 +5,7 @@ const routes = [
   { path: '/', name: 'home', component: HomeView },
   { path: '/projects', name: 'projects', component: () => import('@/views/ProjectsView.vue') },
   { path: '/skills', name: 'skills', component: () => import('@/views/SkillsView.vue') },
+  { path: '/experience', name: 'experience', component: () => import('@/views/ExperienceView.vue') },
   { path: '/about', name: 'about', component: () => import('@/views/AboutView.vue') },
   { path: '/contact', name: 'contact', component: () => import('@/views/ContactView.vue') },
   { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import('@/views/NotFoundView.vue') },
